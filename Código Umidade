@@ -1,0 +1,12 @@
+int pinoSensor = A0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valorUmidade = analogRead(pinoSensor);
+  Serial.print("Leitura do Sensor: ");
+  Serial.println(valorUmidade);
+  delay(1000);
+}
